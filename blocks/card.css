@@ -12,6 +12,7 @@
     flex-flow: row wrap;
     align-items: center;
 }
+
 .card__like-btn {
     background-image: url(../images/heart.svg);
     height: 20px;
@@ -19,6 +20,7 @@
     border: none;
     opacity: 40%;
     margin-top: 12px;
+    background-color: #FCF5E5;
 }
 
 .card__title {
@@ -27,13 +29,13 @@
     margin: 12px 0 0;
     padding-bottom: 2px;
     line-height: 24px;
-    max-width: 393px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 880px) {
+
 }
 
 @media screen and (max-width: 627px) {
@@ -46,15 +48,16 @@
         font-size: 16px;
         margin-bottom: 0;
         line-height: 16px;
-        max-width: ;
+        max-width: 235px;
     }
 
     .card__like-btn {
         height: 18px;
         width: 20px;
         border: none;
-        object-fit: cover;  
+        object-fit: cover;
         padding-right: 17px;
         padding-bottom: 18px;
     }
 }
+
